@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+	{% block title %}Agregar productos{% endblock %}
+	{% block content %}
+	Agregando Productos
+	<form action="." method="POST" enctype="multipart/form-data">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<input type="submit" value="grabar">
+		<input type="reset" value="limpiar"> 
+	</form>
+<br>
+		{{ informacion }}
+		<a href="{% url vista_productos%}">Regresar a la lista de productos</a>
+	{% endblock %}

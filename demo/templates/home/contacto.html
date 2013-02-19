@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Contactanos {% endblock %}
+{% block content %}
+<h1>formulario</h1>
+{% if info_enviado %}
+	Gracias por eenviar un comentario, blabla blá
+	<br>
+	La información recibida fue la siguiente: <br>
+	<p>Email: {{email}}<br>Titulo: {{titulo}}<br>Texto: <b>{{texto}}</b></p>
+{% else %}
+	<form action="." method="post">
+	{% csrf_token %}
+	{{form.as_p}}
+	<input type="submit" value="submit">
+	</form>
+{% endif %}
+{% endblock %}

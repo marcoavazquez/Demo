@@ -1,0 +1,31 @@
+body{
+	background-color: #FAFAFA;
+	color:#444;
+	font-size: 16px;
+	font-family: courier;
+}
+a{
+	color: #555;
+	text-decoration: none;
+}
+header{
+	background-color: #DDF;
+}
+a:hover{
+	color: #000;
+	text-decoration: underline;
+}
+nav{
+	background-color: #8888FF;
+}
+nav a{
+	padding: 15px;
+}
+#cuerpo{
+	width: 1024px;
+	margin: 0px auto;
+}
+#contenido{
+	background-color: #CCCCFF;
+	height: 400px;
+}
